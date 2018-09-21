@@ -1,0 +1,7 @@
+sudo: required
+cache: pip
+language: python
+
+notifications:
+    webhooks: https://www.travisbuddy.com/
+script: echo "Hello World"
