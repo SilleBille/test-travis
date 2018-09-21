@@ -4,4 +4,4 @@ language: python
 
 notifications:
     webhooks: https://www.travisbuddy.com/
-script: echo "Hello World"
+script: echo "Hello World" && exit 1
