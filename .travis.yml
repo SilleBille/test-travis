@@ -6,7 +6,7 @@ notifications:
     webhooks: https://www.travisbuddy.com/
 
 travisBuddy:
-        regex: "^https://transfer.sh/(.*)/(.*)"
+    regex: "^https://transfer.sh/(.*)/(.*)"
 
 jobs:
   include:
