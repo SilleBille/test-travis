@@ -17,13 +17,13 @@ jobs:
         - >
           echo -e "https://transfer.sh/JKasfZg/pki-build.txt \n
           https://transfer.sh/nIVdsfsal/var_log.tar \n
-          https://transfer.sh/PsafdvD3/systemd_journal.txt"
+          https://transfer.sh/PsafdvD3/systemd_journal.txt" && exit 1
 
     - script:
         - >
           echo -e "https://transfer.sh/JKMZg/pki-build.txt \n
           https://transfer.sh/nIV2l/var_log.tar \n
-          https://transfer.sh/PUvD3/systemd_journal.txt"
+          https://transfer.sh/PUvD3/systemd_journal.txt" && exit 1
 
     - stage: Stage 2
       script:
