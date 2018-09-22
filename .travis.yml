@@ -6,7 +6,7 @@ notifications:
     webhooks: https://www.travisbuddy.com/
 
 travisBuddy:
-        regex: "^https://transfer.sh/(.*)/(.*)"
+    regex: "^https://transfer.sh/(.*)/(.*)"
 
 jobs:
   include:
@@ -23,7 +23,7 @@ jobs:
         - >
           echo -e "https://transfer.sh/JKMZg/pki-build.txt \n
           https://transfer.sh/nIV2l/var_log.tar \n
-          https://transfer.sh/PUvD3/systemd_journal.txt" && exit 1
+          https://transfer.sh/PUvD3/systemd_journal.txt" && exit 2
 
     - stage: Stage 2
       script:
