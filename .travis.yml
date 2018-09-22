@@ -4,4 +4,30 @@ language: python
 
 notifications:
     webhooks: https://www.travisbuddy.com/
-script: echo "Hello World"
+
+travisBuddy:
+        regex: "^https://transfer.sh/(.*)/(.*)"
+
+jobs:
+  include:
+
+    - env:
+        - TASK="Task1"
+      script:
+        - >
+          echo -e "https://transfer.sh/JKasfZg/pki-build.txt \n
+          https://transfer.sh/nIVdsfsal/var_log.tar \n
+          https://transfer.sh/PsafdvD3/systemd_journal.txt"
+
+    - script:
+        - >
+          echo -e "https://transfer.sh/JKMZg/pki-build.txt \n
+          https://transfer.sh/nIV2l/var_log.tar \n
+          https://transfer.sh/PUvD3/systemd_journal.txt"
+
+    - stage: Stage 2
+      script:
+        - >
+          echo -e "https://transfer.sh/JKdZg/pki-build.txt \n
+          https://transfer.sh/nfs2l/var_log.tar \n
+          https://transfer.sh/PsafD3/systemd_journal.txt"
