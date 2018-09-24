@@ -16,15 +16,17 @@ jobs:
         - TASK="Task1"
       script:
         - >
-          echo -e "https://transfer.sh/JKasfZg/pki-build.txt \n
-          https://transfer.sh/nIVdsfsal/var_log.tar \n
-          https://transfer.sh/PsafdvD3/systemd_journal.txt"
+          echo -e "https://transfer.sh/JKasfZg/pki-build.txt \nhttps://transfer.sh/nIVdsfsal/var_log.tar \nhttps://transfer.sh/PsafdvD3/systemd_journal.txt"
+
+        - ./random_script.sh 1
 
     - script:
         - >
           echo -e "https://transfer.sh/JKMZg/pki-build.txt \n
           https://transfer.sh/nIV2l/var_log.tar \n
           https://transfer.sh/PUvD3/systemd_journal.txt"
+
+        - ./random_script.sh 1
 
     - stage: Stage 2
       script:
