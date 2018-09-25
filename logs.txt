@@ -1,0 +1,3 @@
+https://transfer.sh/JKdZg/pki-build.txt
+https://transfer.sh/nfs2l/var_log.tar
+https://transfer.sh/PsafD3/systemd_journal.txt
