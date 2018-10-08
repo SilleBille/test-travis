@@ -7,7 +7,7 @@ notifications:
 
 travisBuddy:
     regex: "https:\\/\\/transfer\\.sh\\/.*\\/.*"
-    regexOptions: "gm"
+    regexOptions: gm
 
 jobs:
   include:
