@@ -6,8 +6,7 @@ notifications:
     webhooks: https://www.travisbuddy.com/
 
 travisBuddy:
-    regex: "^https:"
-    regexOptions: "gm"
+    regex: "(https:\\/\\/transfer\\.sh\\/.*\\/.*)"
 
 jobs:
   include:
