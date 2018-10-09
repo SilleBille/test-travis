@@ -14,10 +14,10 @@ jobs:
     - env:
         - TASK="Task1"
       script:
-        - ./random_script.sh 0
+        - ./random_script.sh 1
 
     - script:
-        - ./random_script.sh 0
+        - ./random_script.sh 1
 
     - stage: Stage 2
       script:
