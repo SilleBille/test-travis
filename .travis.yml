@@ -6,7 +6,7 @@ notifications:
     webhooks: https://www.travisbuddy.com/
 
 travisBuddy:
-    regex: "^(https:\/\/transfer\.sh\/.*\/.*)"
+    regex: "^(https:\\/\\/transfer\\.sh\\/.*\\/.*)"
     regexOptions: "gm"
 jobs:
   include:
@@ -14,10 +14,10 @@ jobs:
     - env:
         - TASK="Task1"
       script:
-        - ./random_script.sh 0
+        - ./random_script.sh 1
 
     - script:
-        - ./random_script.sh 0
+        - ./random_script.sh 1
 
     - stage: Stage 2
       script:
