@@ -1,27 +1,42 @@
+# sudo: required
+# cache: pip
+# language: python
+
+# notifications:
+#     webhooks: https://www.travisbuddy.com/
+
+# travisBuddy:
+#     regex: "^(https:\\/\\/transfer\\.sh\\/.*\\/.*)"
+#     regexOptions: "gm"
+# jobs:
+#   include:
+
+#     - env:
+#         - TASK="Task1"
+#       script:
+#         - ./random_script.sh 0
+
+#     - script:
+#         - ./random_script.sh 0
+
+#     - stage: Stage 2
+#       script:
+#         - >
+#           echo -e "https://transfer.sh/JKdZg/pki-build.txt \n
+#           https://transfer.sh/nfs2l/var_log.tar \n
+#           https://transfer.sh/PsafD3/systemd_journal.txt"
+
 sudo: required
-cache: pip
 language: python
 
-notifications:
-    webhooks: https://www.travisbuddy.com/
-
-travisBuddy:
-    regex: "^(https:\\/\\/transfer\\.sh\\/.*\\/.*)"
-    regexOptions: "gm"
-jobs:
-  include:
-
-    - env:
-        - TASK="Task1"
-      script:
-        - ./random_script.sh 0
-
-    - script:
-        - ./random_script.sh 0
-
-    - stage: Stage 2
-      script:
-        - >
-          echo -e "https://transfer.sh/JKdZg/pki-build.txt \n
-          https://transfer.sh/nfs2l/var_log.tar \n
-          https://transfer.sh/PsafD3/systemd_journal.txt"
+install:
+  - echo "Bleh?"
+  
+script:
+  - >
+    echo "Hello"
+    exit 1
+    echo "World!"
+    exit 2
+    echo "Third"
+    exit 0
