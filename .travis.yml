@@ -30,17 +30,16 @@ sudo: required
 language: python
 
 install:
-  - |
-    echo "Bleh?"
-    exit 1
-    echo "Hello"
-    exit 0
+  - echo "Bleh?"
   
 script:
   - |
-    echo "Hello"
-    exit 1
-    echo "World!"
-    exit 2
-    echo "Third"
-    exit 0
+    if [ $TASK = "IPA" ]; then
+       echo "Hello"
+       exit 1
+    else
+      echo "World!"
+      echo "Third"
+      exit 2
+      exit 0
+    fi
