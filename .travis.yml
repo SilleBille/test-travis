@@ -35,8 +35,8 @@ before_install:
 install:
   - >
     echo "Bleh?"
-    exit 1
-    echo "Hello"
+    # exit 1
+    # echo "Hello"
     exit 0
   
 script:
