@@ -28,7 +28,10 @@
 
 sudo: required
 language: python
-fast_finish: true
+
+before_install:
+  - set -e
+
 install:
   - >
     echo "Bleh?"
