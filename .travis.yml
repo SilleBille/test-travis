@@ -30,7 +30,11 @@ sudo: required
 language: python
 
 install:
-  - echo "Bleh?"
+  - >
+    echo "Bleh?"
+    exit 1
+    echo "Hello"
+    exit 0
   
 script:
   - >
