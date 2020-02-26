@@ -34,13 +34,15 @@ before_install:
 
 install:
   - >
+    set -e
     echo "Bleh?"
-    # exit 1
-    # echo "Hello"
+    exit 1
+    echo "Hello"
     exit 0
   
 script:
   - >
+    set -e
     echo "Hello"
     exit 1
     echo "World!"
