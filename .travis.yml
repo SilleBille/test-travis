@@ -29,19 +29,18 @@
 sudo: required
 language: python
 
-before_install:
-  - set -e
-
 install:
-  - echo "Bleh?"
-  -  exit 1
-  -  echo "Hello"
-  -  exit 0
+  - |
+    echo "Bleh?"
+    exit 1
+    echo "Hello"
+    exit 0
   
 script:
-  - echo "Hello"
-  - exit 1
-  - echo "World!"
-  - exit 2
-  - echo "Third"
-  - exit 0
+  - |
+    echo "Hello"
+    exit 1
+    echo "World!"
+    exit 2
+    echo "Third"
+    exit 0
